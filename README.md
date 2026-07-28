@@ -1,4 +1,15 @@
 # 🏦 Lendora AI
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+
+![Streamlit](https://img.shields.io/badge/Streamlit-1.49-red?logo=streamlit)
+
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Gradient%20Boosting-orange?logo=scikitlearn)
+
+![License](https://img.shields.io/badge/License-MIT-green)
+
+![Status](https://img.shields.io/badge/Deployment-Live-success)
+
+![GitHub Repo stars](https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPOSITORY?style=social)
 
 ### AI-Powered Loan Approval & Risk Assessment Platform
 
