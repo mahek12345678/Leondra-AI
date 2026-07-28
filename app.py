@@ -105,6 +105,15 @@ def build_model_input(
     luxury_assets_value: float,
     bank_asset_value: float,
 ) -> pd.DataFrame:
+    if income_annum <= 0:
+        raise ValueError("Annual income must be greater than zero.")
+
+    if loan_amount <= 0:
+        raise ValueError("Loan amount must be greater than zero.")
+
+    if loan_term <= 0:
+        raise ValueError("Loan term must be greater than zero.")
+
     total_assets = (
         residential_assets_value
         + commercial_assets_value
@@ -115,7 +124,7 @@ def build_model_input(
     monthly_income = income_annum / 12
     loan_income_ratio = loan_amount / income_annum
     asset_coverage_ratio = total_assets / loan_amount
-    emi_proxy = loan_amount / (loan_term * 12)
+    emi_proxy = loan_amount / loan_term
 
     input_data = {
         "no_of_dependents": no_of_dependents,
@@ -136,8 +145,10 @@ def build_model_input(
         "emi_proxy": emi_proxy,
     }
 
-    return pd.DataFrame([input_data], columns=MODEL_FEATURES)
-
+    return pd.DataFrame(
+        [input_data],
+        columns=MODEL_FEATURES,
+    )
 
 # -------------------------------------------------------------------
 # Prediction utilities
