@@ -207,3 +207,7 @@ It is not intended to replace real-world financial underwriting systems. Product
 **Mahek Advani**
 
 GitHub: https://github.com/mahek12345678
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
