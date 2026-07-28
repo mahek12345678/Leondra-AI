@@ -93,36 +93,19 @@ No manual calculation is required before prediction.
 
 ---
 
-## 🏗 System Workflow
+## 🏗 System Architecture
 
-```text
-Applicant Information
-          │
-          ▼
-Input Validation
-          │
-          ▼
-Automatic Feature Engineering
-          │
-          ▼
-Scikit-learn Pipeline
-          │
-          ▼
-Gradient Boosting Classifier
-          │
-          ▼
-Approval Probability
-          │
-          ├────────► Risk Grade
-          │
-          ├────────► Financial Overview
-          │
-          └────────► AI Insights
-```
+The application follows a clear inference pipeline from applicant data collection to model prediction and reporting.
 
----
-
-## 🛠 Technology Stack
+```mermaid
+flowchart LR
+    A[Applicant Inputs] --> B[Validation]
+    B --> C[Feature Engineering]
+    C --> D[Scikit-learn Pipeline]
+    D --> E[Gradient Boosting]
+    E --> F[Approval Probability]
+    F --> G[Decision and Risk Grade]
+    G --> H[Insights and Report]## 🛠 Technology Stack
 
 | Category | Technology |
 |----------|------------|
