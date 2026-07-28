@@ -9,7 +9,7 @@
 
 ![Status](https://img.shields.io/badge/Deployment-Live-success)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPOSITORY?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/mahek12345678/Leondra-AI?style=social)
 
 ### AI-Powered Loan Approval & Risk Assessment Platform
 
