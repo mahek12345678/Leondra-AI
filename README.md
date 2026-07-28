@@ -99,25 +99,20 @@ The application follows a clear inference pipeline from applicant data collectio
 
 ```mermaid
 flowchart LR
-    A[Applicant Inputs] --> B[Validation]
-    B --> C[Feature Engineering]
-    C --> D[Scikit-learn Pipeline]
-    D --> E[Gradient Boosting]
-    E --> F[Approval Probability]
-    F --> G[Decision and Risk Grade]
-    G --> H[Insights and Report]## 🛠 Technology Stack
+    A["Applicant Inputs"] --> B["Validation"]
+    B --> C["Feature Engineering"]
+    C --> D["Scikit-learn Pipeline"]
+    D --> E["Gradient Boosting"]
+    E --> F["Approval Probability"]
+    F --> G["Decision and Risk Grade"]
+    G --> H["Insights and Report"]
+```
 
-| Category | Technology |
-|----------|------------|
-| Language | Python |
-| Framework | Streamlit |
-| Machine Learning | Scikit-learn |
-| Model | Gradient Boosting |
-| Data Processing | Pandas |
-| Model Serialization | Joblib |
+For the detailed architecture, see [architecture.md](architecture.md).
 
 ---
 
+## 🛠 Technology Stack
 ## 📂 Repository Structure
 
 ```text
